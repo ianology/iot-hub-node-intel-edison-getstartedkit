@@ -39,6 +39,7 @@ This tutorial describes the process of taking your Intel Edison Grove kit, and u
 ## 1.1 Tutorial Overview
 
 In this tutorial, you'll be doing the following:
+
 - Setting up your environment on Azure using the Microsoft Azure IoT Suite Remote Monitoring preconfigured solution, getting a large portion of the set-up that would be required done in one step.
 - Setting your device and sensors up so that it can communicate with both your computer, and Azure IoT. 
 - Updating the device code sample to include our connection data and send it to Azure to be viewed remotely.
@@ -177,10 +178,10 @@ node remote_monitoring.js
 
 - Once you have the sample running, visit your dashboard by visiting azureiotsuite.com and clicking “Launch” on your solution
 - Make sure the “Device to View” in the upper right is set to your device
-- If the demo is running, you should see the graph change as your data updates in real time!
+- If the demo is running, ou should see an output on your command window that shows your device details and the sensor data. Also, check out how the graph changes in real time as your data updates!
 
 ***
-**Note:** Make sure to **stop** your remote monitoring solution once you have completed this to avoid unnecesary Azure consumption! 
+**Note:** Make sure to **stop** your remote monitoring solution once you have completed this to avoid unnecesary Azure consumption! Check out the troubleshooting section for more details.
 ***
 
 ## 1.8 Next steps
@@ -211,6 +212,7 @@ This tutorial describes the process of taking your Microsoft Azure IoT Starter K
 ## 2.1 Tutorial Overview
 
 This tutorial has the following steps:
+
 - Provision an IoT Hub instance on Microsoft Azure and adding your device. 
 - Prepare the device, get connected to the device, and set it up so that it can read sensor data.
 - Configure your Microsoft Azure IoT services by adding Event Hub, Storage Account, and Stream Analytics resources.
@@ -224,7 +226,7 @@ The end result will be a functional command center where you can view the histor
 ### 2.2.1 Required Software
 
 - [Git](https://git-scm.com/downloads) - For cloning the required repositories
-- [Node.js](https://nodejs.org) - For running the Node application
+- Node.js - For the Node application, we will go over this later.
 - Intel Edison drivers, available here: 
   - [Windows users](https://software.intel.com/en-us/get-started-edison-windows)
   - [Mac users](https://software.intel.com/en-us/get-started-edison-osx)
