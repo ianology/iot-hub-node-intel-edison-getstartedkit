@@ -137,25 +137,19 @@ wget https://raw.githubusercontent.com/Azure-Samples/iot-hub-node-intel-edison-g
 - Open the file **remote_monitoring.js** in a text editor using the command:
 
 ```
-vi remote_monitoring.js
+nano remote_monitoring.js
 ```
 
-- Vi is not your normal text editor - Here is a guide to some of the important controls:
+- Nano is generally not installed with Yocto build. If you don't have it installed already, here are the instructions to install nano on your intel edision:
 
 ```
-x	  Delete character to the right of cursor
-X	  Delete character to the left of cursor
-:x	  Exit, saving changes
+mkdir nano-installer
+cd nano-installer
+wget http://www.nano-editor.org/dist/v2.2/nano-2.2.6.tar.gz 
+tar xvf nano-2.2.6.tar.gz 
+cd nano-2.2.6 
+./configure && make && make install
 
-Movement
-h	  Move left
-j	  Move down
-k	  Move up
-l	  Move right
-
-[ESC] returns the editor to command mode after entering one of the below modes: 
-i	  Insert before cursor
-a	  Append after cursor
 ```
 
 - Locate the following code in the file and update your connection data:
@@ -468,25 +462,19 @@ wget https://raw.githubusercontent.com/Azure-Samples/iot-hub-node-intel-edison-g
 - Open the file **command_center.js** in a text editor using the command (Nano is another editor you can use if you are running the v3.0 image on your Edison):
 
 ```
-vi command_center.js
+nano command_center.js
 ```
 
-- Vi is not your normal text editor - Here is a guide to some of the important controls:
+- Nano is generally not installed with Yocto build. If you don't have it installed already, here are the instructions to install nano on your intel edision:
 
 ```
-x	  Delete character to the right of cursor
-X	  Delete character to the left of cursor
-:x	  Exit, saving changes
+mkdir nano-installer
+cd nano-installer
+wget http://www.nano-editor.org/dist/v2.2/nano-2.2.6.tar.gz 
+tar xvf nano-2.2.6.tar.gz 
+cd nano-2.2.6 
+./configure && make && make install
 
-Movement
-h	  Move left
-j	  Move down
-k	  Move up
-l	  Move right
-
-[ESC] returns the editor to command mode after entering one of the below modes: 
-i	  Insert before cursor
-a	  Append after cursor
 ```
 
 - Locate the following code in the file and update your connection data.  See below for information how how to retrieve these values:
