@@ -160,7 +160,9 @@ var deviceId = '<DEVICE_ID>';
 var sharedAccessKey = '<SHARED_ACCESS_KEY>';
 ```
 
-- Save with `[Escape]:wq[Enter]`
+- Save your changes by pressing Ctrl+O and when nano prompts you to save it as the same file, just press ENTER.
+
+- Press Ctrl+X to exit nano.
 
 - Run the sample application using the following commands:
 
@@ -459,7 +461,7 @@ wget https://raw.githubusercontent.com/Azure-Samples/iot-hub-node-intel-edison-g
 wget https://raw.githubusercontent.com/Azure-Samples/iot-hub-node-intel-edison-getstartedkit/master/command_center/package.json
 ```  
  
-- Open the file **command_center.js** in a text editor using the command (Nano is another editor you can use if you are running the v3.0 image on your Edison):
+- Open the file **command_center.js** in a text editor using the command:
 
 ```
 nano command_center.js
@@ -487,7 +489,9 @@ cd nano-2.2.6
 ```
 var connectionString = '<IOT_HUB_DEVICE_CONNECTION_STRING>';
 ```
-- Save with `[Escape]:wq[Enter]`
+- Save your changes by pressing Ctrl+O and when nano prompts you to save it as the same file, just press ENTER.
+
+- Press Ctrl+X to exit nano.
 
 - Run the sample application using the following commands:
 
