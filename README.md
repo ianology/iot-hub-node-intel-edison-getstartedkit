@@ -92,7 +92,7 @@ In this tutorial, you'll be doing the following:
 - Make note of your `device ID`, `Device Key`, and `IoT Hub Hostname` to enter into the code you’ll run on your device later 
 
 ***
-**Warning:** The Remote Monitoring solution provisions a set of Azure IoT Services in your Azure account. It is meant to reflect a real enterprise architecture and thus it's Azure consumption is quite heavy. To avoid unnecessary Azure consumption, we recommend you Delete the preconfigured solution in azureiotsuite.com once you are done with your work (since it is easy to recreate). Alternatively, if you want to keep it up and running you can do two things to reduce consumption:
+**Warning:** The Remote Monitoring solution provisions a set of Azure IoT Services in your Azure account. It is meant to reflect a real enterprise architecture and thus its Azure consumption is quite heavy. To avoid unnecessary Azure consumption, we recommend you delete the preconfigured solution in azureiotsuite.com once you are done with your work (since it is easy to recreate). Alternatively, if you want to keep it up and running you can do two things to reduce consumption:
 
 1) Disable the simulated devices created with the solution (Go to Devices>>Select the device>> on the device details menu on the right, clich on Disable Device. Repeat with all the simulated devices).
 
@@ -178,7 +178,7 @@ node remote_monitoring.js
 - If the demo is running, ou should see an output on your command window that shows your device details and the sensor data. Also, check out how the graph changes in real time as your data updates!
 
 ***
-**Note:** Make sure to **stop** your remote monitoring solution once you have completed this to avoid unnecesary Azure consumption! Check out the troubleshooting section for more details.
+**Note:** Make sure you delete or  **stop** your remote monitoring solution once you have completed this to avoid unnecesary Azure consumption! Check out the troubleshooting section for more details.
 ***
 
 ## 1.8 Next steps
