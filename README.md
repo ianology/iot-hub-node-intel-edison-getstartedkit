@@ -26,17 +26,18 @@ This tutorial describes the process of taking your Intel Edison Grove kit, and u
 
 ## Table of Contents
 
-- [1.1 Tutorial Overview](#11-tutorial-overview)
-- [1.2 Before Starting](#12-before-starting)
-  - [1.2.1 Required Software](#121-required-software)
-  - [1.2.2 Required Hardware](#122-required-hardware)
-- [1.3 Create a New Azure IoT Suite Remote Monitoring solution and Add Device](#13-create-a-new-azure-iot-suite-remote-monitoring-solution-and-add-device)
-- [1.4 Prepare your device](#14-connect-the-dht22-sensor-module-to-your-device)
-- [1.5 Connect the Grove Sensor Module to your Device](#15-connect-the-dht22-sensor-module-to-your-device)
-- [1.6 Modify the Remote Monitoring sample](#16-modify-the-remote-monitoring-sample-)
-- [1.7 View the Sensor Data from the Remote Monitoring Portal](#18-view-the-sensor-data-from-the-remote-monitoring-portal)
-- [1.8 Next steps](#19-next-steps)
+- [1.1 Tutorial Overview](#section1.1)
+- [1.2 Before Starting](#section1.2)
+  - [1.2.1 Required Software](#section1.2.1)
+  - [1.2.2 Required Hardware](#section1.2.2)
+- [1.3 Create a New Azure IoT Suite Remote Monitoring solution and Add Device](#section1.3)
+- [1.4 Prepare your device](#section1.4)
+- [1.5 Connect the Grove Sensor Module to your Device](#section1.5)
+- [1.6 Modify the Remote Monitoring sample](#section1.6)
+- [1.7 View the Sensor Data from the Remote Monitoring Portal](#section1.7)
+- [1.8 Next steps](#section1.8)
 
+<a name="section1.1" />
 ## 1.1 Tutorial Overview
 
 In this tutorial, you'll be doing the following:
@@ -45,8 +46,10 @@ In this tutorial, you'll be doing the following:
 - Setting your device and sensors up so that it can communicate with both your computer, and Azure IoT. 
 - Updating the device code sample to include our connection data and send it to Azure to be viewed remotely.
 
+<a name="section1.2" />
 ## 1.2 Before Starting
 
+<a name="section1.2.1" />
 ### 1.2.1 Required Software
 
 - Intel Edison drivers, available here: 
@@ -54,13 +57,13 @@ In this tutorial, you'll be doing the following:
   - [Mac users](https://software.intel.com/en-us/get-started-edison-osx)
   - [Linux users](https://software.intel.com/en-us/get-started-edison-linux)
    
-
+<a name="section1.2.2" />
 ### 1.2.2 Required Hardware
 
 - Intel Edison Grove kit
   - Two USB Mini cables 
   
-
+<a name="section1.3" />
 ## 1.3 Create a New Azure IoT Suite Remote Monitoring solution and Add Device
 
 - Log in to [Azure IoT Suite](https://www.azureiotsuite.com/)  with your Microsoft account and click **Create a New Preconfigured Solution** 
@@ -105,6 +108,7 @@ In this tutorial, you'll be doing the following:
  - https://azure.microsoft.com/en-us/documentation/articles/iot-suite-remote-monitoring-sample-walkthrough/
  - https://azure.microsoft.com/en-us/documentation/articles/iot-suite-connecting-devices/
  
+ <a name="section1.4" />
 ## 1.4 Prepare your device
 
 If this is the first time you use your Intel Edison board, you will have to follow some steps to assemble it.
@@ -112,6 +116,7 @@ If this is the first time you use your Intel Edison board, you will have to foll
 - Please follow steps 1-4 of the [instructions](https://software.intel.com/en-us/iot/library/edison-getting-started). Intel's IDE (Step 5) is optional for our tutorial.
 - Flash your board with the latest [firmware](https://www-ssl.intel.com/content/www/us/en/support/boards-and-kits/000005990.html)
 
+<a name="section1.5" />
 ## 1.5 Connect the Grove Sensor Module to your Device
 
 - Begin by placing the Base Shield over the pins on your Intel Edison board
@@ -126,7 +131,7 @@ If this is the first time you use your Intel Edison board, you will have to foll
 
 **At the end of your work, your Intel Edison should be connected with a working sensor. We'll test it in the next sections.**
 
-
+<a name="section1.6" />
 ## 1.6 Modify, build and run the Remote Monitoring sample 
 
 - In your Edison boards command line, type the following command to transfer the files to your board:
@@ -173,6 +178,7 @@ npm install
 node remote_monitoring.js
 ```
 
+<a name="section1.7" />
 ## 1.7 View the Sensor Data from the Remote Monitoring Portal
 
 - Once you have the sample running, visit your dashboard by visiting azureiotsuite.com and clicking “Launch” on your solution
@@ -183,6 +189,7 @@ node remote_monitoring.js
 **Note:** Make sure you delete or  **stop** your remote monitoring solution once you have completed this to avoid unnecesary Azure consumption! Check out the troubleshooting section for more details.
 ***
 
+<a name="section1.8" />
 ## 1.8 Next steps
 
 Please visit our [Azure IoT Dev Center](https://azure.microsoft.com/en-us/develop/iot/) for more samples and documentation on Azure IoT.
@@ -194,20 +201,21 @@ This tutorial describes the process of taking your Microsoft Azure IoT Starter K
 
 ## Table of Contents
 
-- [2.1 Tutorial Overview](#21-tutorial-overview)
-- [2.2 Before Starting](#22-before-starting)
-  - [2.2.1 Required Software](#221-required-software)
-  - [2.2.2 Required Hardware](#222-required-hardware)
-- [2.3 Connect the Sensor Module to your Device](#23-connect-the-sensor-module-to-your-device)
-- [2.4 Create a New Microsoft Azure IoT Hub and Add Device](#24-create-a-new-microsoft-azure-iot-hub-and-add-device)
-- [2.5 Create an Event Hub](#25-create-an-event-hub)
-- [2.6 Create a Storage Account for Table Storage](#26-create-a-storage-account-for-table-storage)
-- [2.7 Create a Stream Analytics job to Save IoT Data in Table Storage and Raise Alerts](#26-create-a-stream-analytics-job-to-save-iot-data-in-table-storage-and-raise-alerts)
-- [2.8 Node Application Setup](#28-node-application-setup)
-- [2.9 Modify Device Sample](#29-modify-device-sample)
-- [2.10 View Your Command Center Application](#210-view-your-command-center-application)
-- [2.11 Next steps](#211-next-steps)
+- [2.1 Tutorial Overview](#section2.1)
+- [2.2 Before Starting](#section2.2)
+  - [2.2.1 Required Software](#section2.2.1)
+  - [2.2.2 Required Hardware](#section2.2.2)
+- [2.3 Connect the Sensor Module to your Device](#section2.3)
+- [2.4 Create a New Microsoft Azure IoT Hub and Add Device](#section2.4)
+- [2.5 Create an Event Hub](#section2.5)
+- [2.6 Create a Storage Account for Table Storage](#section2.6)
+- [2.7 Create a Stream Analytics job to Save IoT Data in Table Storage and Raise Alerts](#section2.7)
+- [2.8 Node Application Setup](#section2.8)
+- [2.9 Modify Device Sample](#section2.9)
+- [2.10 View Your Command Center Application](#section2.10)
+- [2.11 Next steps](#section2.11)
 
+<a name="section2.1" />
 ## 2.1 Tutorial Overview
 
 This tutorial has the following steps:
@@ -220,8 +228,10 @@ This tutorial has the following steps:
 
 The end result will be a functional command center where you can view the history of your device's sensor data, a history of alerts, and send commands back to the device.
 
+<a name="section2.2" />
 ## 2.2 Before Starting
 
+<a name="section2.2.1" />
 ### 2.2.1 Required Software
 
 - [Git](https://git-scm.com/downloads) - For cloning the required repositories
@@ -231,11 +241,13 @@ The end result will be a functional command center where you can view the histor
   - [Mac users](https://software.intel.com/en-us/get-started-edison-osx)
   - [Linux users](https://software.intel.com/en-us/get-started-edison-linux)
    
+<a name="section2.2.2" />
 ### 2.2.2 Required Hardware
 
 - Intel Edison Grove kit
   - Two USB Mini cables 
 
+<a name="section2.3" />
 ## 2.3 Connect the Sensor Module to your Device
 
 - Begin by placing the Base Shield over the pins on your Intel Edison board
@@ -251,6 +263,7 @@ The end result will be a functional command center where you can view the histor
 
 **At the end of your work, your Intel Edison should be connected with a working sensor. We'll test it in the next sections.**
 
+<a name="section2.4" />
 ## 2.4 Create a New Microsoft Azure IoT Hub and Add Device
 
 - To create your Microsoft Azure IoT Hub and add a device, follow the instructions outlined in the [Setup IoT Hub Microsoft Azure Iot SDK page](https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md).
@@ -260,7 +273,7 @@ The end result will be a functional command center where you can view the histor
 **Note:** Make sure to copy down the names and connection strings mentioned into a text document for reference later.
 ***
 
-
+<a name="section2.5" />
 ## 2.5 Create an Event Hub
 Event Hub is an Azure IoT publish-subscribe service that can ingest millions of events per second and stream them into multiple applications, services or devices.
 - Log on to the [Microsoft Azure Portal](https://portal.azure.com/)
@@ -281,6 +294,7 @@ Event Hub is an Azure IoT publish-subscribe service that can ingest millions of 
 - Click **Save** at the bottom of the page, then click the **Dashboard** tab near the top and click on **Connection Information** at the bottom
 - _Copy down the connection string for the `readwrite` policy you created._
 
+<a name="section2.6" />
 ## 2.6 Create a Storage Account for Table Storage
 Now we will create a service to store our data in the cloud.
 - Log on to the [Microsoft Azure Portal](https://portal.azure.com/)
@@ -290,6 +304,7 @@ Now we will create a service to store our data in the cloud.
 - You should try to create the storage account in the same region as your IoT Hub and Event Hub if possible.  
 - Once the account is created, find it in the **resources blade** or click on the **pinned tile**, go to **Settings**, **Keys**, and write down the _primary connection string_.
 
+<a name="section2.7" />
 ## 2.7 Create a Stream Analytics job to Save IoT Data in Table Storage and Raise Alerts
 Stream Analytics is an Azure IoT service that streams and analyzes data in the cloud. We'll use it to process data coming from your device.
 - Log on to the [Microsoft Azure Portal](https://portal.azure.com/)
@@ -364,6 +379,7 @@ WHERE MTemperature > 25
 **Note:** Make sure to **stop** your Command Center jobs once you have when you take a break or finish to avoid unnecessary Azure consumption!  (See: [Troubleshooting](#troubleshooting))
 ***
 
+<a name="section2.8" />
 ## 2.8 Node Application Setup
 
  - If you do not have it already, install Node.js and NPM.
@@ -454,6 +470,7 @@ To deploy this project to the cloud using Azure, you can reference [Creating a N
 
 Next, we will update your device so that it can interact with all the things you just created.
 
+<a name="section2.9" />
 ## 2.9 Modify Device Sample
 
 - In your Edison boards command line, type the following command to transfer the files to your board:
@@ -503,6 +520,7 @@ node command_center.js
 ```
 - Data is now being sent off at regular intervals to Microsoft Azure!
 
+<a name="section2.10" />
 ## 2.10 View Your Command Center Application
 
 Head back to your Node application and you will have a fully functional command center, complete with a history of sensor data, alerts that display when the temperature got outside a certain range, and commands that you can send to your device remotely.
@@ -511,6 +529,7 @@ Head back to your Node application and you will have a fully functional command 
 **Note:** Make sure to **stop** your Command Center jobs once you have when you finish to avoid unnecessary Azure consumption!  (See: [Troubleshooting](#troubleshooting))
 ***
 
+<a name="section2.11" />
 ## 2.11 Next steps
 
 Please visit our [Azure IoT Dev Center](https://azure.microsoft.com/en-us/develop/iot/) for more samples and documentation on Azure IoT.
