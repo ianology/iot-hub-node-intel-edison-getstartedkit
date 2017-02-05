@@ -16,9 +16,9 @@ var board = new five.Board({
   io: new Edison()
 });
 
-var hostName        = '<IOTHUB_HOST_NAME>';
-var deviceId        = '<DEVICE_ID>';
-var sharedAccessKey = '<SHARED_ACCESS_KEY>';
+var hostName        = 'ScienceFair2016-17';
+var deviceId        = 'ianedison';
+var sharedAccessKey = 'pJIiTMQhKrR8eVYFi0qOYJnJlfAn0HRFRSGKYaQ67s4=';
 
 // String containing Hostname, Device Id & Device Key in the following formats:
 //  "HostName=<iothub_host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"
